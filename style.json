@@ -227,7 +227,7 @@
             "type": "vector"
         }
     },
-    "sprite": "mapbox://sprites/parismontevideo/cm5l5hlfs004l01saehlmh52f/draft",
+    "sprite": "mapbox://sprites/parismontevideo/cm5l5hlfs004l01saehlmh52f/d02lg7898enz18ji0reqwbn2g",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "projection": {"name": "globe"},
     "layers": [
@@ -3135,10 +3135,10 @@
         }
     ],
     "created": "2025-01-06T14:42:10.504Z",
-    "modified": "2025-01-06T14:51:59.832Z",
+    "modified": "2025-01-06T14:52:01.023Z",
     "id": "cm5l5hlfs004l01saehlmh52f",
     "owner": "parismontevideo",
     "visibility": "public",
     "protected": false,
-    "draft": true
+    "draft": false
 }
