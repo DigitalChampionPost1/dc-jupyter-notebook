@@ -1,84 +1,12 @@
 {
     "version": 8,
-    "name": "Monochrome",
+    "name": "Monochrome-copy",
     "metadata": {
         "mapbox:type": "default",
-        "mapbox:origin": "monochrome-dark-v1",
-        "mapbox:sdk-support": {
-            "js": "3.8.0",
-            "android": "11.9.0",
-            "ios": "11.9.0"
-        },
-        "mapbox:autocomposite": true,
         "mapbox:variation": "monochrome-light-v1",
-        "mapbox:groups": {
-            "Land & water, land": {
-                "name": "Land & water, land",
-                "collapsed": true
-            },
-            "Land & water, water": {
-                "name": "Land & water, water",
-                "collapsed": true
-            },
-            "Land & water, built": {
-                "name": "Land & water, built",
-                "collapsed": true
-            },
-            "Transit, built": {"name": "Transit, built", "collapsed": true},
-            "Buildings, built": {"name": "Buildings, built", "collapsed": true},
-            "Walking, cycling, etc., tunnels": {
-                "name": "Walking, cycling, etc., tunnels",
-                "collapsed": true
-            },
-            "Road network, tunnels": {
-                "name": "Road network, tunnels",
-                "collapsed": true
-            },
-            "Walking, cycling, etc., surface": {
-                "name": "Walking, cycling, etc., surface",
-                "collapsed": true
-            },
-            "Road network, surface": {
-                "name": "Road network, surface",
-                "collapsed": true
-            },
-            "Transit, surface": {"name": "Transit, surface", "collapsed": true},
-            "Walking, cycling, etc., barriers-bridges": {
-                "name": "Walking, cycling, etc., barriers-bridges",
-                "collapsed": true
-            },
-            "Road network, bridges": {
-                "name": "Road network, bridges",
-                "collapsed": true
-            },
-            "Transit, bridges": {"name": "Transit, bridges", "collapsed": true},
-            "Administrative boundaries, admin": {
-                "name": "Administrative boundaries, admin",
-                "collapsed": true
-            },
-            "Road network, road-labels": {
-                "name": "Road network, road-labels",
-                "collapsed": true
-            },
-            "Natural features, natural-labels": {
-                "name": "Natural features, natural-labels",
-                "collapsed": true
-            },
-            "Point of interest labels, poi-labels": {
-                "name": "Point of interest labels, poi-labels",
-                "collapsed": true
-            },
-            "Transit, transit-labels": {
-                "name": "Transit, transit-labels",
-                "collapsed": true
-            },
-            "Place labels, place-labels": {
-                "name": "Place labels, place-labels",
-                "collapsed": true
-            }
-        },
+        "mapbox:uiParadigm": "layers",
         "mapbox:decompiler": {
-            "id": "monochrome-light-v1",
+            "id": "cm5l5a2iv004b01queq934fep",
             "componentVersion": "18.0.0",
             "strata": [
                 {
@@ -111,6 +39,31 @@
                     ]
                 }
             ],
+            "overrides": {
+                "land-and-water": {
+                    "cliff": {"layout": {"visibility": "none"}},
+                    "contour-label": {"layout": {"visibility": "none"}},
+                    "national-park": {"layout": {"visibility": "none"}},
+                    "contour-line": {"layout": {"visibility": "none"}},
+                    "land": {"layout": {"visibility": "none"}},
+                    "hillshade": {"layout": {"visibility": "none"}},
+                    "landcover": {"layout": {"visibility": "none"}},
+                    "national-park_tint-band": {
+                        "layout": {"visibility": "none"}
+                    },
+                    "water-depth": {"layout": {"visibility": "none"}},
+                    "land-structure-line": {"layout": {"visibility": "none"}},
+                    "wetland": {"layout": {"visibility": "none"}},
+                    "wetland-pattern": {"layout": {"visibility": "none"}},
+                    "waterway-shadow": {"layout": {"visibility": "none"}},
+                    "pitch-outline": {"layout": {"visibility": "none"}},
+                    "water-shadow": {"layout": {"visibility": "none"}},
+                    "water": {"layout": {"visibility": "none"}},
+                    "waterway": {"layout": {"visibility": "none"}},
+                    "landuse": {"layout": {"visibility": "none"}},
+                    "land-structure-polygon": {"layout": {"visibility": "none"}}
+                }
+            },
             "components": {
                 "road-network": "18.0.0",
                 "natural-features": "18.0.0",
@@ -124,27 +77,28 @@
             },
             "propConfig": {
                 "road-network": {
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "roadNetwork": "Simple",
                     "roadWidth": 0.6
                 },
                 "natural-features": {
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "labelStyle": "Text only",
                     "density": 1
                 },
                 "place-labels": {
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "settlementLabelStyle": "Text only",
                     "settlementsDensity": 2,
-                    "settlementSubdivisionsDensity": 3
+                    "settlementSubdivisionsDensity": 3,
+                    "continents": true
                 },
                 "admin-boundaries": {
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "admin0Width": 1.3
                 },
                 "point-of-interest-labels": {
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "labelStyle": "Text only",
                     "density": 1,
                     "poiEtcFont": ["DIN Pro Italic", "Arial Unicode MS Regular"]
@@ -154,14 +108,14 @@
                     "controlDashStyle": true,
                     "golfHoleLabelLine": false,
                     "walkingCyclingPisteBackground": false,
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "trailDashPattern": "Solid",
                     "pedestrianPolygonFeatures": false,
                     "cyclewayPisteDashPattern": "Solid",
                     "labels": false
                 },
                 "transit": {
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "labelStyle": "Text only",
                     "iconColorScheme": "Monochrome",
                     "aerialways": false,
@@ -169,20 +123,96 @@
                     "transitLabels": false
                 },
                 "land-and-water": {
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "landType": "Landuse only",
                     "waterStyle": "Simple",
                     "landuseDensity": 8
                 },
                 "buildings": {
-                    "colorBase": "hsl(220, 3%, 99%)",
+                    "colorBase": "hsl(220, 0%, 100%)",
                     "houseNumbers": false
                 }
             }
+        },
+        "mapbox:thumb": "data:image/webp;base64,UklGRqgFAABXRUJQVlA4WAoAAAAgAAAAOwAAOwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDhMugMAAC87wA4A50AmYDFc+odTSQQyAYuNS/9w6pAJWGxc+odTZ/5z/26kpJxIywmpExIDAG0bprsZTrwkQBb//ymJJV8Q0X8IAtDGbdJzm+0gCYH2BWZm/v+gcdLJzMzMzALNMx3iBngxe4iOFSwQ6arMhMzMzD7CClyZmQOoZES1JgaIwRJ5SGcIzLGMk+C5wAJzMVEEy0XHQFSucjmoAnmdQOTkKBRYPicwZQWtCgBm3Y5cZUxGsfL781ztFEpIdIF+Shx0abJk4yoXXcXCVk4dnkgn7S3IgY4rDiziMkP5t+xOSsbSzPD7UTJhZk6I6eSzijNEFo/4onoAlAqCj/1w8dsNe0oEELEuOQxt9NV/6T+FSpr6p+gOcSriOY7LLfUjyv/LlwoT4Pu5NST+Lcwq4Fg6gsj7RUyrot+eSs9LoPXcW40lCn+PrTeMODMZnKSpq/b7KFIfmmR23nPsRytIUFRSQtArc8elFneMAtxSxM6Tyrvccw0x6bhcPtVkUqGLzUybnfmxb17T2owYpJu7VfG+bkYyQLXStywU/yWi7Aelmwag56GFY0ZZtgSHEaRZbt0NU+QaAnwQb2UQG4KCFRPDVo++TUaWeM/5Nhn8PBYqB1XRj7KzQ0I5uxNwtGnYM+J9tPz4vhquIV04EZazLe5JE80inrPH6KQUf2EN33Uv3IxUqoNW73V/upmAM0wusTPXky8YWc1dvyPYSiA5mQAgM+H3efz52RxzEDPlvUbyWHzbPKFWlY5aMV0ZYG8VCdqkd5OcvlhB+a6U+UGE1jaxFrU/W6sbrHFz3t6c80h9Oh4YSr4SecB86hFhS8JxHHBNywwielpjgSfcyjmcqZXbNRLxs6AC6mD6+iZxRgE70VrKpdSJX/16/ctHYegKakuohr+aKWnTidVHIobX3+WxlVSSDOuSCqrLb3ewXU6lKdu6dHrpmu7NksdGg7LhYcXpU5duSmiktwsjbE3nyKApA8WP5wDKESm1xhdT9gK5WJeCRM2s535UI6sPqQtG/2PYdwYl26+0I0bCaeRVvA+ZnUJkqZLH7H6u9I4pKdtjktmp3tsu5juhBhC64HptATHYWAg7PQORlZzhHI1zrvI4OdShHA9lVYRoReaENg8q0omBUn1LF9O2vFNV8niD244xMWPGzlDJ2bqnPpvf9lT9NTI6MY3eFUQfiI24LElpJY8a4Pe/WehB5oh31uSOC7eYnSbvPT9qRjoi1nRp/jeG3rTLwYFFU2c7PpG+9jA2tZq2+pn/n8I4GA==",
+        "mapbox:autocomposite": true,
+        "mapbox:sdk-support": {
+            "js": "3.8.0",
+            "android": "11.9.0",
+            "ios": "11.9.0"
+        },
+        "mapbox:origin": "monochrome-dark-v1",
+        "mapbox:groups": {
+            "Transit, transit-labels": {
+                "name": "Transit, transit-labels",
+                "collapsed": true
+            },
+            "Administrative boundaries, admin": {
+                "name": "Administrative boundaries, admin",
+                "collapsed": true
+            },
+            "Land & water, built": {
+                "name": "Land & water, built",
+                "collapsed": true
+            },
+            "Transit, bridges": {"name": "Transit, bridges", "collapsed": true},
+            "Transit, surface": {"name": "Transit, surface", "collapsed": true},
+            "Land & water, land": {
+                "name": "Land & water, land",
+                "collapsed": true
+            },
+            "Road network, bridges": {
+                "name": "Road network, bridges",
+                "collapsed": true
+            },
+            "Road network, tunnels": {
+                "name": "Road network, tunnels",
+                "collapsed": true
+            },
+            "Road network, road-labels": {
+                "name": "Road network, road-labels",
+                "collapsed": true
+            },
+            "Buildings, built": {"name": "Buildings, built", "collapsed": true},
+            "Natural features, natural-labels": {
+                "name": "Natural features, natural-labels",
+                "collapsed": true
+            },
+            "Road network, surface": {
+                "name": "Road network, surface",
+                "collapsed": true
+            },
+            "Walking, cycling, etc., barriers-bridges": {
+                "name": "Walking, cycling, etc., barriers-bridges",
+                "collapsed": true
+            },
+            "Place labels, place-labels": {
+                "name": "Place labels, place-labels",
+                "collapsed": true
+            },
+            "Point of interest labels, poi-labels": {
+                "name": "Point of interest labels, poi-labels",
+                "collapsed": true
+            },
+            "Walking, cycling, etc., tunnels": {
+                "name": "Walking, cycling, etc., tunnels",
+                "collapsed": true
+            },
+            "Walking, cycling, etc., surface": {
+                "name": "Walking, cycling, etc., surface",
+                "collapsed": true
+            },
+            "Transit, built": {"name": "Transit, built", "collapsed": true},
+            "Land & water, water": {
+                "name": "Land & water, water",
+                "collapsed": true
+            }
         }
     },
-    "center": [-74, 40.73],
-    "zoom": 11,
+    "center": [8.3057, 47.0122],
+    "zoom": 9.25,
+    "bearing": 0,
+    "pitch": 0,
     "fog": {
         "range": [-1, 10],
         "color": "hsl(0, 0%, 100%)",
@@ -193,11 +223,11 @@
     },
     "sources": {
         "composite": {
-            "url": "mapbox://mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2",
+            "url": "mapbox://mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2",
             "type": "vector"
         }
     },
-    "sprite": "mapbox://sprites/parismontevideo/cm5l5a2iv004b01queq934fep/2jjykge359i8f1h31pt0wky9i",
+    "sprite": "mapbox://sprites/parismontevideo/cm5l5hlfs004l01saehlmh52f/d02lg7898enz18ji0reqwbn2g",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "projection": {"name": "globe"},
     "layers": [
@@ -208,16 +238,16 @@
                 "mapbox:featureComponent": "land-and-water",
                 "mapbox:group": "Land & water, land"
             },
-            "layout": {},
+            "layout": {"visibility": "none"},
             "paint": {
                 "background-color": [
                     "interpolate",
                     ["linear"],
                     ["zoom"],
                     9,
-                    "hsl(220, 3%, 99%)",
+                    "hsl(220, 0%, 100%)",
                     11,
-                    "hsl(220, 1%, 97%)"
+                    "hsl(220, 0%, 99%)"
                 ]
             }
         },
@@ -232,9 +262,9 @@
             "source-layer": "landuse_overlay",
             "minzoom": 5,
             "filter": ["==", ["get", "class"], "national_park"],
-            "layout": {},
+            "layout": {"visibility": "none"},
             "paint": {
-                "fill-color": "hsl(220, 0%, 93%)",
+                "fill-color": "hsl(220, 0%, 95%)",
                 "fill-opacity": [
                     "interpolate",
                     ["linear"],
@@ -306,9 +336,9 @@
                     8
                 ]
             ],
-            "layout": {},
+            "layout": {"visibility": "none"},
             "paint": {
-                "fill-color": "hsl(220, 0%, 93%)",
+                "fill-color": "hsl(220, 0%, 95%)",
                 "fill-opacity": [
                     "interpolate",
                     ["linear"],
@@ -358,7 +388,7 @@
                     false
                 ]
             ],
-            "layout": {},
+            "layout": {"visibility": "none"},
             "paint": {
                 "fill-color": [
                     "interpolate",
@@ -369,16 +399,16 @@
                         "match",
                         ["get", "class"],
                         "shadow",
-                        "hsla(220, 1%, 89%, 0.06)",
-                        "hsla(220, 1%, 100%, 0.04)"
+                        "hsla(220, 0%, 90%, 0.06)",
+                        "hsla(220, 0%, 100%, 0.04)"
                     ],
                     16,
                     [
                         "match",
                         ["get", "class"],
                         "shadow",
-                        "hsla(220, 1%, 89%, 0)",
-                        "hsla(220, 1%, 100%, 0)"
+                        "hsla(220, 0%, 90%, 0)",
+                        "hsla(220, 0%, 100%, 0)"
                     ]
                 ],
                 "fill-antialias": false
@@ -396,10 +426,11 @@
             "minzoom": 8,
             "layout": {
                 "line-cap": ["step", ["zoom"], "butt", 11, "round"],
-                "line-join": ["step", ["zoom"], "miter", 11, "round"]
+                "line-join": ["step", ["zoom"], "miter", 11, "round"],
+                "visibility": "none"
             },
             "paint": {
-                "line-color": "hsl(220, 1%, 86%)",
+                "line-color": "hsl(220, 0%, 88%)",
                 "line-width": [
                     "interpolate",
                     ["exponential", 1.3],
@@ -429,8 +460,8 @@
             },
             "source": "composite",
             "source-layer": "water",
-            "layout": {},
-            "paint": {"fill-color": "hsl(220, 1%, 86%)"}
+            "layout": {"visibility": "none"},
+            "paint": {"fill-color": "hsl(220, 0%, 88%)"}
         },
         {
             "id": "land-structure-polygon",
@@ -447,16 +478,16 @@
                 ["==", ["get", "class"], "land"],
                 ["==", ["geometry-type"], "Polygon"]
             ],
-            "layout": {},
+            "layout": {"visibility": "none"},
             "paint": {
                 "fill-color": [
                     "interpolate",
                     ["linear"],
                     ["zoom"],
                     9,
-                    "hsl(220, 3%, 99%)",
+                    "hsl(220, 0%, 100%)",
                     11,
-                    "hsl(220, 1%, 97%)"
+                    "hsl(220, 0%, 99%)"
                 ]
             }
         },
@@ -475,7 +506,7 @@
                 ["==", ["get", "class"], "land"],
                 ["==", ["geometry-type"], "LineString"]
             ],
-            "layout": {"line-cap": "square"},
+            "layout": {"line-cap": "square", "visibility": "none"},
             "paint": {
                 "line-width": [
                     "interpolate",
@@ -491,9 +522,9 @@
                     ["linear"],
                     ["zoom"],
                     9,
-                    "hsl(220, 3%, 99%)",
+                    "hsl(220, 0%, 100%)",
                     11,
-                    "hsl(220, 1%, 97%)"
+                    "hsl(220, 0%, 99%)"
                 ]
             }
         },
@@ -519,7 +550,7 @@
                 ["==", ["geometry-type"], "Polygon"]
             ],
             "paint": {
-                "fill-color": "hsl(220, 1%, 100%)",
+                "fill-color": "hsl(220, 0%, 100%)",
                 "fill-opacity": [
                     "interpolate",
                     ["linear"],
@@ -543,7 +574,7 @@
             "minzoom": 9,
             "filter": ["==", ["geometry-type"], "LineString"],
             "paint": {
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-width": [
                     "interpolate",
                     ["exponential", 1.5],
@@ -581,7 +612,7 @@
             ],
             "layout": {},
             "paint": {
-                "fill-color": "hsl(220, 0%, 91%)",
+                "fill-color": "hsl(220, 0%, 93%)",
                 "fill-opacity": [
                     "interpolate",
                     ["linear"],
@@ -591,7 +622,7 @@
                     16,
                     1
                 ],
-                "fill-outline-color": "hsla(220, 0%, 78%, 0.8)"
+                "fill-outline-color": "hsla(220, 0%, 80%, 0.8)"
             }
         },
         {
@@ -628,7 +659,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -660,7 +691,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -692,7 +723,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -724,7 +755,7 @@
                     18,
                     6
                 ],
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-dasharray": [
                     "step",
                     ["zoom"],
@@ -764,7 +795,7 @@
                     18,
                     12
                 ],
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -889,7 +920,7 @@
                         72
                     ]
                 ],
-                "line-color": "hsl(220, 1%, 100%)"
+                "line-color": "hsl(220, 0%, 100%)"
             }
         },
         {
@@ -929,7 +960,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -961,7 +992,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -1015,7 +1046,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -1048,7 +1079,7 @@
                     18,
                     6
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [
                     "step",
                     ["zoom"],
@@ -1093,7 +1124,7 @@
                     18,
                     12
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -1308,7 +1339,7 @@
                         60
                     ]
                 ],
-                "line-color": "hsl(220, 1%, 100%)"
+                "line-color": "hsl(220, 0%, 100%)"
             }
         },
         {
@@ -1338,9 +1369,9 @@
                     ["linear"],
                     ["zoom"],
                     13,
-                    "hsl(220, 0%, 93%)",
+                    "hsl(220, 0%, 95%)",
                     17,
-                    "hsl(220, 0%, 87%)"
+                    "hsl(220, 0%, 89%)"
                 ],
                 "line-width": [
                     "interpolate",
@@ -1375,7 +1406,7 @@
                 ["match", ["get", "structure"], ["none", "ford"], true, false]
             ],
             "paint": {
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-width": [
                     "interpolate",
                     ["exponential", 1.5],
@@ -1431,7 +1462,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -1463,7 +1494,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -1495,7 +1526,7 @@
                     18,
                     4
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -1527,7 +1558,7 @@
                     18,
                     6
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [
                     "step",
                     ["zoom"],
@@ -1567,7 +1598,7 @@
                     18,
                     12
                 ],
-                "line-color": "hsl(220, 1%, 100%)",
+                "line-color": "hsl(220, 0%, 100%)",
                 "line-dasharray": [10, 0]
             }
         },
@@ -1692,7 +1723,7 @@
                         96
                     ]
                 ],
-                "line-color": "hsl(220, 1%, 97%)"
+                "line-color": "hsl(220, 0%, 99%)"
             }
         },
         {
@@ -1825,7 +1856,7 @@
                         72
                     ]
                 ],
-                "line-color": "hsl(220, 1%, 100%)"
+                "line-color": "hsl(220, 0%, 100%)"
             }
         },
         {
@@ -1850,7 +1881,7 @@
                 ]
             ],
             "paint": {
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-width": [
                     "interpolate",
                     ["exponential", 1.5],
@@ -1884,7 +1915,7 @@
                 ]
             ],
             "paint": {
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-width": [
                     "interpolate",
                     ["exponential", 1.5],
@@ -1923,7 +1954,7 @@
                 ["match", ["get", "worldview"], ["all", "US"], true, false]
             ],
             "paint": {
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-width": [
                     "interpolate",
                     ["linear"],
@@ -1972,7 +2003,7 @@
                     12,
                     10.4
                 ],
-                "line-color": "hsl(220, 0%, 87%)",
+                "line-color": "hsl(220, 0%, 89%)",
                 "line-opacity": [
                     "interpolate",
                     ["linear"],
@@ -2036,7 +2067,7 @@
                     3,
                     1
                 ],
-                "line-color": "hsl(220, 1%, 71%)"
+                "line-color": "hsl(220, 0%, 72%)"
             }
         },
         {
@@ -2058,7 +2089,7 @@
             ],
             "layout": {},
             "paint": {
-                "line-color": "hsl(220, 0%, 70%)",
+                "line-color": "hsl(220, 0%, 72%)",
                 "line-width": [
                     "interpolate",
                     ["linear"],
@@ -2089,7 +2120,7 @@
                 ["match", ["get", "worldview"], ["all", "US"], true, false]
             ],
             "paint": {
-                "line-color": "hsl(220, 0%, 70%)",
+                "line-color": "hsl(220, 0%, 72%)",
                 "line-width": [
                     "interpolate",
                     ["linear"],
@@ -2192,7 +2223,7 @@
                 "text-letter-spacing": 0.01
             },
             "paint": {
-                "text-color": "hsl(220, 1%, 49%)",
+                "text-color": "hsl(220, 0%, 50%)",
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 1
             }
@@ -2262,7 +2293,7 @@
                 "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]]
             },
             "paint": {
-                "text-color": "hsl(220, 1%, 58%)",
+                "text-color": "hsl(220, 0%, 59%)",
                 "text-halo-color": "hsla(220, 0%, 100%, 0.5)"
             }
         },
@@ -2322,7 +2353,7 @@
                 "text-halo-width": 0.5,
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-blur": 0.5,
-                "text-color": "hsl(220, 1%, 62%)"
+                "text-color": "hsl(220, 0%, 63%)"
             }
         },
         {
@@ -2393,7 +2424,7 @@
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 0.5,
                 "text-halo-blur": 0.5,
-                "text-color": "hsl(220, 1%, 62%)"
+                "text-color": "hsl(220, 0%, 63%)"
             }
         },
         {
@@ -2465,7 +2496,7 @@
                 "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]]
             },
             "paint": {
-                "text-color": "hsl(220, 1%, 58%)",
+                "text-color": "hsl(220, 0%, 59%)",
                 "text-halo-color": "hsla(220, 0%, 100%, 0.5)"
             }
         },
@@ -2547,7 +2578,7 @@
                 ]
             },
             "paint": {
-                "text-color": "hsl(220, 1%, 58%)",
+                "text-color": "hsl(220, 0%, 59%)",
                 "text-halo-color": "hsla(220, 0%, 100%, 0.5)"
             }
         },
@@ -2604,7 +2635,7 @@
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 0.5,
                 "text-halo-blur": 0.5,
-                "text-color": "hsl(220, 1%, 48%)"
+                "text-color": "hsl(220, 0%, 50%)"
             }
         },
         {
@@ -2672,7 +2703,7 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(220, 1%, 49%)",
+                "text-color": "hsl(220, 0%, 50%)",
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 1
             }
@@ -2739,7 +2770,7 @@
             "paint": {
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 1,
-                "text-color": "hsl(220, 1%, 69%)",
+                "text-color": "hsl(220, 0%, 70%)",
                 "text-halo-blur": 0.5
             }
         },
@@ -2826,11 +2857,11 @@
                 "text-color": [
                     "step",
                     ["get", "symbolrank"],
-                    "hsl(220, 1%, 49%)",
+                    "hsl(220, 0%, 50%)",
                     11,
-                    "hsl(220, 1%, 62%)",
+                    "hsl(220, 0%, 63%)",
                     16,
-                    "hsl(220, 1%, 71%)"
+                    "hsl(220, 0%, 72%)"
                 ],
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 1,
@@ -2927,11 +2958,11 @@
                 "text-color": [
                     "step",
                     ["get", "symbolrank"],
-                    "hsl(220, 1%, 49%)",
+                    "hsl(220, 0%, 50%)",
                     11,
-                    "hsl(220, 1%, 62%)",
+                    "hsl(220, 0%, 63%)",
                     16,
-                    "hsl(220, 1%, 71%)"
+                    "hsl(220, 0%, 72%)"
                 ],
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 1,
@@ -2988,7 +3019,7 @@
                 "text-max-width": 6
             },
             "paint": {
-                "text-color": "hsl(220, 1%, 49%)",
+                "text-color": "hsl(220, 0%, 50%)",
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 1,
                 "text-opacity": 0.5
@@ -3027,7 +3058,12 @@
                 ]
             ],
             "layout": {
+                "icon-image": "",
+                "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
                 "text-line-height": 1.1,
+                "text-max-width": 6,
+                "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
+                "text-radial-offset": ["step", ["zoom"], 0.6, 8, 0],
                 "text-size": [
                     "interpolate",
                     ["cubic-bezier", 0.2, 0, 0.7, 1],
@@ -3036,12 +3072,7 @@
                     ["step", ["get", "symbolrank"], 11, 4, 9, 5, 8],
                     9,
                     ["step", ["get", "symbolrank"], 22, 4, 19, 5, 17]
-                ],
-                "text-radial-offset": ["step", ["zoom"], 0.6, 8, 0],
-                "icon-image": "",
-                "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
-                "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
-                "text-max-width": 6
+                ]
             },
             "paint": {
                 "icon-opacity": [
@@ -3051,7 +3082,7 @@
                     7,
                     0
                 ],
-                "text-color": "hsl(220, 1%, 49%)",
+                "text-color": "hsl(220, 0%, 50%)",
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 1.25
             }
@@ -3086,7 +3117,7 @@
                 "text-letter-spacing": 0.05
             },
             "paint": {
-                "text-color": "hsl(220, 1%, 49%)",
+                "text-color": "hsl(220, 0%, 50%)",
                 "text-halo-color": "hsl(220, 0%, 100%)",
                 "text-halo-width": 1.5,
                 "text-opacity": [
@@ -3103,11 +3134,11 @@
             }
         }
     ],
-    "created": "2025-01-06T14:36:19.399Z",
-    "modified": "2025-01-06T14:36:21.952Z",
-    "id": "cm5l5a2iv004b01queq934fep",
+    "created": "2025-01-06T14:42:10.504Z",
+    "modified": "2025-01-06T14:52:01.023Z",
+    "id": "cm5l5hlfs004l01saehlmh52f",
     "owner": "parismontevideo",
-    "visibility": "private",
+    "visibility": "public",
     "protected": false,
     "draft": false
 }
